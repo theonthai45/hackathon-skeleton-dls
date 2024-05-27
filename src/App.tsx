@@ -11,8 +11,9 @@ import {
   useNavigate,
   useLocation,
 } from "react-router-dom";
-import Grid from "@mui/material/Unstable_Grid2";
+
 import "./App.scss";
+import Home from "./Home";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function Layout() {
   const location = useLocation();
   return (
     <>
-      <DivaAdminHeader
+      {/* <DivaAdminHeader
         avatarUrl="/static/profile.jpg"
         email="pbe_admin1@changiairport.com"
         navButtonList={[
@@ -63,36 +64,18 @@ function Layout() {
           },
         ]}
         username="pbe_admin1"
-      />
+      /> */}
       <Outlet />
     </>
-  );
-}
-
-function Home() {
-  return (
-    <main className="homepage">
-      <Grid container spacing={2}>
-        <Grid xs={6} xsOffset={3} md={4}>
-          <DivaCard>
-            <Typography>Home Page</Typography>
-          </DivaCard>
-        </Grid>
-      </Grid>
-    </main>
   );
 }
 
 function About() {
   return (
     <main className="aboutpage">
-      <Grid container spacing={2}>
-        <Grid xs={6} xsOffset={3} md={4}>
-          <DivaCard>
-            <Typography>About Page</Typography>
-          </DivaCard>
-        </Grid>
-      </Grid>
+      <DivaCard>
+        <Typography>About Page</Typography>
+      </DivaCard>
     </main>
   );
 }
