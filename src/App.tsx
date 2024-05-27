@@ -89,7 +89,7 @@ function About() {
       <Grid container spacing={2}>
         <Grid xs={6} xsOffset={3} md={4}>
           <DivaCard>
-            <Typography>About Page</Typography>
+            <Typography>About</Typography>
           </DivaCard>
         </Grid>
       </Grid>
