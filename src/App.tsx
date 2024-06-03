@@ -11,7 +11,6 @@ import {
   useNavigate,
   useLocation,
 } from "react-router-dom";
-import Grid from "@mui/material/Unstable_Grid2";
 import "./App.scss";
 
 function App() {
@@ -72,13 +71,9 @@ function Layout() {
 function Home() {
   return (
     <main className="homepage">
-      <Grid container spacing={2}>
-        <Grid xs={6} xsOffset={3} md={4}>
-          <DivaCard>
-            <Typography>Home Page</Typography>
-          </DivaCard>
-        </Grid>
-      </Grid>
+      <DivaCard>
+        <Typography>Home Page</Typography>
+      </DivaCard>
     </main>
   );
 }
@@ -86,13 +81,9 @@ function Home() {
 function About() {
   return (
     <main className="aboutpage">
-      <Grid container spacing={2}>
-        <Grid xs={6} xsOffset={3} md={4}>
-          <DivaCard>
-            <Typography>About Page</Typography>
-          </DivaCard>
-        </Grid>
-      </Grid>
+      <DivaCard>
+        <Typography>About Page</Typography>
+      </DivaCard>
     </main>
   );
 }
