@@ -12,6 +12,8 @@ import {
   useLocation,
 } from "react-router-dom";
 
+import Grid from "@mui/material/Unstable_Grid2";
+import SuccessPage from './Success';
 import "./App.scss";
 import Home from "./Home";
 
@@ -22,6 +24,12 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="success" element={
+            <SuccessPage 
+              firstName="Test FN" 
+              lastName="Test LN" 
+            />
+          } />
         </Route>
       </Routes>
     </BrowserRouter>
