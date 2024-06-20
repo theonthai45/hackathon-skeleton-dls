@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
-  font-family: 'Lato', sans-serif;
   background-color: #EEEEEE;
 }
 
@@ -29,11 +27,8 @@ main {
 
     &.successpage .cag-bg {
       background: url('./assets/cagbg.png');
-      background-size: cover;
-      background-repeat: no-repeat; 
-      background-position: center top;
       width: 100%;
-      padding: 40px 0 60px;
+      padding: 40px 0 70px;
       color: #FFFFFF;
       text-transform: uppercase;
     }
